@@ -7,6 +7,8 @@ def factorial(n):
 		result*=i
 		i+=1
 	return result
+def test_answer():
+    assert factorial(4) == 24
 
 #read input from user
 n = 5 #int(input('Enter a number: '))
