@@ -1,9 +1,9 @@
-def Passing_test_one():
+def test_one_should_pass():
     assert True
 
-def Passing_test_two():
+def test_two():
     assert True
 
-def Passing_test_three():
+def Passing_test_threeshould_pass():
     assert True
 
