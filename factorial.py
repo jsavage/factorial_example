@@ -9,7 +9,7 @@ def factorial(n):
 	return result
 
 #read input from user
-n = int(input('Enter a number: '))
+n = 5 #int(input('Enter a number: '))
 
 #calculate factorial
 result = factorial(n)
