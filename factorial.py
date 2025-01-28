@@ -1,19 +1,13 @@
-#!/usr/bin/env python3
-#function computes factorial of a given number
 def factorial(n):
-	result = 1
-	i=1
-	while i<=n:
-		result*=i
-		i+=1
-	return result
-def test_answer():
-    assert factorial(4) == 24
-
-#read input from user
-n = 5 #int(input('Enter a number: '))
-
-#calculate factorial
-result = factorial(n)
-
-print(result)
+    if not isinstance(n, int):
+        raise TypeError("Input must be an integer")
+    if n < 0:
+        raise ValueError("Factorial is not defined for negative numbers")
+    if n > 999:
+        raise ValueError("Input too large - maximum value is 999")
+    if n == 0:
+        return 1
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
